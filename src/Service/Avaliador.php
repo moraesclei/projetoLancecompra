@@ -13,6 +13,7 @@ class Avaliador
         $lance = $leilao->getLance();
         $ultimoLance = $lance[count($lance) -1];
         $this->maiorValor = $ultimoLance->getValor();
+        $this->menorValor = $ultimoLance->getValor();
     }
                 
     public function getmaiorValor(): float
